@@ -13,6 +13,6 @@ async function connect() {
             useNewUrlParser: true
         })
     } catch (e) {
-
+        console.log(e)
     }
 }

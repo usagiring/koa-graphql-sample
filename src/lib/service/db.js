@@ -1,3 +1,4 @@
+const mongoose = require('mongoose')
 const { DB_URL } = require('config')
 mongoose.Promise = global.Promise;  // Use native promises
 

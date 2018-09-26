@@ -1,0 +1,19 @@
+type Room {
+    _id: ObjectId
+    name: String
+    createdAt: Date
+    createdBy: ObjectId
+    updatedAt: Date
+    updatedBy: ObjectId
+
+    books: [Book]
+}
+
+extend type Query {
+    room(_id: String!): Room
+    rooms: [Room]
+}
+
+extend type Mutation {
+    addRoom(name: String!): Room
+}

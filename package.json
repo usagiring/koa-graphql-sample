@@ -1,0 +1,26 @@
+{
+  "name": "koa-graphql-sample",
+  "version": "1.0.0",
+  "description": "A sample for graphql server by Koa + apollo server 2 + mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/run.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hling51325/koa-graphql-sample.git"
+  },
+  "author": "tokine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hling51325/koa-graphql-sample/issues"
+  },
+  "homepage": "https://github.com/hling51325/koa-graphql-sample#readme",
+  "dependencies": {
+    "apollo-server-koa": "^2.1.0",
+    "config": "^2.0.1",
+    "graphql": "^14.0.2",
+    "koa": "^2.5.3"
+  }
+}

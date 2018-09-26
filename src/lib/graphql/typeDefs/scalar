@@ -1,0 +1,14 @@
+scalar Date
+scalar ObjectId
+
+type Root {
+    _id: ObjectId
+}
+
+type Query {
+    root: Root
+}
+
+type Mutation {
+    Root(_id: ID): Root
+}

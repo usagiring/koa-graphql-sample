@@ -1,0 +1,20 @@
+type Book {
+    _id: ObjectId
+    name: String
+    author: String
+    createdAt: Date
+    createdBy: ObjectId
+    updatedAt: Date
+    updatedBy: ObjectId
+
+    room: Room
+}
+
+extend type Query {
+    book(_id: ObjectId, name: String, author: String): Book
+    books: [Book]
+}
+
+extend type Mutation {
+    addBook(name: String!, author: String!): Book
+}

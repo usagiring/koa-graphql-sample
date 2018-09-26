@@ -1,6 +1,4 @@
-const mongoose = require('mongoose');
 const { DB_URL } = require('config')
-gridFSStream.mongo = mongoose.mongo;
 mongoose.Promise = global.Promise;  // Use native promises
 
 module.exports = {
